@@ -1,0 +1,13 @@
+from abc import ABC, abstractmethod
+from core.domain.models.match import Match
+from typing import Dict
+
+class MatchRepository(ABC):
+    @abstractmethod
+    def save_match(self, match: Match) -> None: ...
+    @abstractmethod
+    def get_match(self, match_id: str) -> Match | None: ...
+    @abstractmethod
+    def list_matches(self, league_id: str | None = None) -> Dict[str, Match]: ...
+    @abstractmethod
+    def delete_match(self, match_id: str) -> None: ...
