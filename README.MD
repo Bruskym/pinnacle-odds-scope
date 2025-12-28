@@ -84,7 +84,7 @@ pip install -r requirements.txt
 ```
 
 ## Uso
-Para executar o cálculo do SPI:
+Para executar:
 ```bash
 python main.py
 ```
