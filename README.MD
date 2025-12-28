@@ -29,6 +29,7 @@ odds_scope/
 │   └── utils/      # Helpers e utilitários de conversão.
 ├── config/         # Configurações de ambiente e parâmetros da API.
 └── main.py         # Entry point da aplicação.
+```
 
 Domain: Define as entidades (League, Match, Odd) e as interfaces que a infraestrutura deve seguir.
 
