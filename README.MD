@@ -20,15 +20,15 @@ O sistema automatiza o ciclo de vida de coleta de dados de apostas, focando em a
 
 O projeto divide-se em camadas para isolar a lógica de negócio das implementações externas:
 
+```text
 odds_scope/
 ├── core/
-│   ├── domain/       # Modelos, contratos (interfaces) e regras puras.
-│   ├── infra/        # Implementações (Pinnacle API, Repositories, Scheduler).
-│   ├── services/     # Orquestração, coordenação e lógica de atualização.
-│   └── utils/        # Helpers e utilitários de conversão.
-├── config/           # Configurações de ambiente e parâmetros da API.
-└── main.py           # Entry point da aplicação.
-
+│   ├── domain/     # Modelos, contratos (interfaces) e regras puras.
+│   ├── infra/      # Implementações (Pinnacle API, Repositories, Scheduler).
+│   ├── services/   # Orquestração, coordenação e lógica de atualização.
+│   └── utils/      # Helpers e utilitários de conversão.
+├── config/         # Configurações de ambiente e parâmetros da API.
+└── main.py         # Entry point da aplicação.
 
 Domain: Define as entidades (League, Match, Odd) e as interfaces que a infraestrutura deve seguir.
 
